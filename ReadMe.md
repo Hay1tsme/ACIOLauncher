@@ -24,3 +24,15 @@ To correctly execute the built code, run the executable with one parameter speci
 ```
 ACIOLauncher.exe games.ini
 ```
+
+This fork also includes support for touchscreen games without traditional keypads. Simply pass the `--touch` attribute, and instead of initializing the ACIO, a GUI will pop up, with all game configs appearing as buttons. No changes to the ini file are required, simply press the button of the game you would like to run.
+
+```
+ACIOLauncher.exe games.ini --touch
+```
+
+The GUI spawns on monitor 0 by default. You can optionally include the monitor number for games where the touchscreen is not the main monitor (such as on Lightning or Valkyre cabs)
+
+```
+ACIOLauncher.exe games.ini --touch 1
+```
